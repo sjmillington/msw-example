@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+if(process.env.NODE_ENV === 'development'){
+  require('./mocks')
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
